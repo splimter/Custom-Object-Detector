@@ -1,7 +1,7 @@
 <annotation>
-	<folder>img</folder>
+	<folder>train</folder>
 	<filename>tl2.jpg</filename>
-	<path>tl2.jpg</path>
+	<path>/content/Custom-Object-Detector/TensorFlow/workspace/training_demo/images/train/tl2.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
