@@ -20,9 +20,9 @@ import sys
 sys.path.append("../../models/research")
 
 from PIL import Image
-from object_detection.utils import dataset_util
-#from object_detection.utils import label_map_util
-#from object_detection.utils import visualization_utils as vis_util
+#from object_detection.utils import dataset_util
+from object_detection.utils import label_map_util
+from object_detection.utils import visualization_utils as vis_util
 from collections import namedtuple, OrderedDict
 
 flags = tf.app.flags
