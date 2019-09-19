@@ -94,5 +94,4 @@ def main(_):
     print('Successfully created the TFRecords: {}'.format(output_path))
 
 if __name__ == '__main__':
-    print(os.path.join(FLAGS.image_dir))
     tf.app.run()
