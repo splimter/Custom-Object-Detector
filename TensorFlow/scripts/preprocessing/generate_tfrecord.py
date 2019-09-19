@@ -82,8 +82,9 @@ def create_tf_example(group, path):
 
 def main(_):
     writer = tf.python_io.TFRecordWriter(FLAGS.output_path)
-    #path = os.path.join(FLAGS.image_dir)
-    path = os.path.join('/content/Custom-Object-Detector/TensorFlow/workspace/training_demo/images/train/')
+    path = os.path.join(FLAGS.image_dir)
+    print("***************"+path)
+    #path = os.path.join('/content/Custom-Object-Detector/TensorFlow/workspace/training_demo/images/train/')
     examples = pd.read_csv(FLAGS.csv_input)
     grouped = split(examples, 'filename')
     for group in grouped:
