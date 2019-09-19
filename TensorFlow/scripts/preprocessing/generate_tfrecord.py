@@ -42,7 +42,7 @@ def split(df, group):
 
 def create_tf_example(group, path):
     print("***************",group)
-    path = os.path.join('/content/Custom-Object-Detector/TensorFlow/workspace/training_demo/images/train/')
+    path = os.path.abspath('/content/Custom-Object-Detector/TensorFlow/workspace/training_demo/images/train/')
     print("***************"+path)
     with tf.gfile.GFile(os.path.join(path, '{}'.format(group.filename)), 'rb') as fid:
         encoded_jpg = fid.read()
