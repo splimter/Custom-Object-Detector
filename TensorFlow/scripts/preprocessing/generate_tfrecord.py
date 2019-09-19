@@ -83,7 +83,6 @@ def create_tf_example(group, path):
 def main(_):
     writer = tf.python_io.TFRecordWriter(FLAGS.output_path)
     path = os.path.join(FLAGS.image_dir)
-    print(path)
     examples = pd.read_csv(FLAGS.csv_input)
     grouped = split(examples, 'filename')
     for group in grouped:
@@ -95,4 +94,5 @@ def main(_):
     print('Successfully created the TFRecords: {}'.format(output_path))
 
 if __name__ == '__main__':
+    print(FLAGS.image_dir)
     tf.app.run()
