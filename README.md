@@ -1,2 +1,2 @@
-# Custom-Object-Detector
-Custom Object Detector Using CFAR
+# Custom Object Detector Helper
+
